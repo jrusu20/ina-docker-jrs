@@ -1,0 +1,13 @@
+name: 'Flujo con Docker-Compose'
+on: push
+jobs:
+  probar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: 'Iniciar docker-compose'
+        run:  docker-compose -f docker-compose.ym up
+      - name: 'Listar los contenedores en ejecucion'
+        run:  docker ps -a
+      - name: 'Mostrar las bitacoras de inicio'
+        run:  docker logs basedatos
