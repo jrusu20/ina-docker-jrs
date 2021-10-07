@@ -7,7 +7,7 @@ jobs:
     steps: 
       - name: 'Ejecutar la accion del Docker'
         id: hola
-        uses: jrusu20/ina-docker-jrs@v1
+        uses: jrusu20/ina-docker-jrs/action@master
         with:
           quien: 'Lucho'
       - name: 'Mostrar la hora obtenida'
