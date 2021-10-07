@@ -11,7 +11,7 @@ services:
       - 5342: 5342
     volumes:
       - pgdata: /var/lib/postgresql/data
-   admin:
+  admin:
      image: dpage/pgadmin4:4.23
      environment:
        PGADMIN_DEFAULT_EMAIL: admin@pgadmin.com
