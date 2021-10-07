@@ -6,7 +6,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: 'Iniciar docker-compose'
-        run:  docker-compose -f docker-compose.ym up
+        run:  docker-compose -f docker_compose.yml up
       - name: 'Listar los contenedores en ejecucion'
         run:  docker ps -a
       - name: 'Mostrar las bitacoras de inicio'
