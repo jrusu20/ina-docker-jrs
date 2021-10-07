@@ -1,4 +1,4 @@
-name: 'Flujo con Docker-Compose'
+name: 'Flujo con docker-compose'
 on: push
 jobs:
   probar:
